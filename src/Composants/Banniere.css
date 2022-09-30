@@ -1,0 +1,33 @@
+.banniere {
+  position: relative;
+  top: 0;
+  height: 100%;
+  min-height: 100% !important;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 80%,
+      #000 150%
+    ),
+    url("../Assets/banniere.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.menu{
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+.banniere-icon-container {
+  margin-top: 100px;
+}
+
+.banniere-icon {
+  width: 75px;
+  height: 75px;
+}

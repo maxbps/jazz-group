@@ -16,3 +16,7 @@ body,
 .nunito {
   font-family: "Nunito";
 }
+
+.title {
+  font-size: 1.5rem;
+}

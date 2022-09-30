@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Banniere } from "./Composants/Banniere";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Banniere />
     </div>
   );
 }
