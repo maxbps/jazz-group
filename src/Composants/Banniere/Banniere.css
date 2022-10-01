@@ -1,4 +1,4 @@
-.banniere {
+#banniere {
   position: relative;
   top: 0;
   height: 100%;
@@ -10,24 +10,47 @@
       rgba(0, 0, 0, 0.4) 80%,
       #000 100%
     ),
-    url("../Assets/banniere.jpg");
+    url("../../Assets/banniere.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
-.menu{
-  margin-right: 15px;
+#menu {
   width: 35px;
   height: 35px;
 }
 
-.banniere-icon-container {
+#menu:hover {
+  transform: scale(2);
+  cursor: pointer;
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 2rem;
+}
+
+.menu-icon {
+  margin-right: 15px;
+}
+
+.banniere-icons-container {
   margin-top: 100px;
+  height: 300px;
+  width: 100%;
+}
+
+.banniere-icon-container {
+  height: 100px;
 }
 
 .banniere-icon {
   width: 75px;
   height: 75px;
+}
+
+.banniere-icon:hover {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
