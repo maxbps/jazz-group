@@ -121,7 +121,6 @@ function Banniere() {
           Menu
         </div>
       )}
-
       <div className="container-fluid px-4 px-lg-5 text-center text-light">
         <h1 className="mb-1 display-1 nunito banniere-title">Jazzify</h1>
         <h2 className="mb-5 display-4 banniere-title">

@@ -2,9 +2,10 @@ html,
 body,
 #root,
 .app {
-  min-height: 100% !important;
+  /* min-height: 100% !important; */
   height: 100%;
-  overflow-x: hidden;
+  background-color: black;
+  /* overflow-x: hidden; */
 }
 
 @font-face {

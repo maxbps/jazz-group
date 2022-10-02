@@ -1,7 +1,12 @@
 import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 // Import du CSS
 import "./Introduction.css";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function Introduction() {
   // #region [INTERFACE]
