@@ -6,6 +6,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 // Import des composants
 import { Banniere } from "../Composants/Banniere/Banniere";
 import { Introduction } from "../Composants/Introduction/Introduction";
+import { Features } from "../Composants/Features/Features";
 
 // Import du CSS
 import "../App.css";
@@ -41,6 +42,7 @@ function Accueil() {
   // Au chargement de l'app, on affiche les parties en fonction du scrollTrigger
   useEffect(() => {
     slideInTop("#introduction");
+    //slideInTop("#features");
   }, []);
   // #endregion
 
@@ -49,6 +51,7 @@ function Accueil() {
     <div className="app">
       <Banniere />
       <Introduction />
+      <Features />
     </div>
   );
   // #endregion
