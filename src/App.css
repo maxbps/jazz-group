@@ -14,9 +14,35 @@ body,
     url("./Assets/Fonts/Nunito-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Peralta";
+  src: local("Peralta"),
+    url("./Assets/Fonts/Peralta-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ShadowsIntoLight";
+  src: local("ShadowsIntoLight"),
+    url("./Assets/Fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+
 .nunito {
   font-family: "Nunito";
 }
+
+.peralta {
+  font-family: "Peralta";
+}
+
+.rock-font {
+  font-family: "ShadowsIntoLight";
+}
+
+.bold{
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
 
 .title {
   font-size: 1.5rem;

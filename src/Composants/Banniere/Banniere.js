@@ -122,9 +122,9 @@ function Banniere() {
         </div>
       )}
       <div className="container-fluid px-4 px-lg-5 text-center text-light">
-        <h1 className="mb-1 display-1 nunito banniere-title">Jazzify</h1>
-        <h2 className="mb-5 display-4 banniere-title">
-          Ecoute les meilleurs artistes du moment
+        <h1 className="mb-1 display-1 rock-font">Rockify</h1>
+        <h2 className="mb-5 display-4 bold rock-font">
+          THE rock band of the moment
         </h2>
         <div className="d-none d-lg-block banniere-icons-container">
           <div className="row banniere-icon-container align-items-center">

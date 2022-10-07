@@ -14,6 +14,28 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function Introduction() {
   // #region [UTIL]
+  // Fonction d'apparition des elements
+  const animAppear = (elem) => {
+    gsap.fromTo(
+      elem,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: elem,
+          start: "top center",
+          end: "bottom center",
+        },
+      }
+    );
+  };
+
   // Fonction pour faire tourner le vynil
   const animVynil = (elem) => {
     gsap.fromTo(
@@ -39,6 +61,8 @@ function Introduction() {
 
   // region [HOOK]
   useEffect(() => {
+    animAppear("#introduction-text");
+    animAppear("#introduction-vynil");
     animVynil(".introduction-vynil-img");
   }, []);
   // #endregion
@@ -48,8 +72,8 @@ function Introduction() {
     <section id="introduction">
       <div className="container">
         <div className="row text-center text-light align-items-center">
-          <div className="col-lg-6 nunito">
-            <h1 className="mt-5 display-4">Jazzify</h1>
+          <div id="introduction-text" className="col-lg-6 nunito">
+            <h1 className="mt-5 display-4 rock-font">At the beginning...</h1>
             <p className="text-normal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               maximus molestie pulvinar. Sed lacinia nisl vitae nisi cursus
@@ -66,10 +90,8 @@ function Introduction() {
               fermentum pellentesque semper in dolor. Vivamus in nibh nec risus
               ultrices laoreet eget at arcu.
             </p>
-            <h2>Ecoute nos plus grands succès</h2>
-            <img className="play-icon" src={play} />
           </div>
-          <div className="col-lg-6 d-none d-lg-block">
+          <div id="introduction-vynil" className="col-lg-6 d-none d-lg-block">
             <img
               alt="image de vynil"
               className="introduction-vynil-img"
